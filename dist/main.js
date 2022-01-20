@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet home = () => {\n    //define container and grid children\n    let container = document.createElement(\"DIV\");\n    let header = document.createElement(\"DIV\");\n    let sidebar = document.createElement(\"DIV\");\n    let subHeader = document.createElement(\"DIV\");\n    let content = document.createElement(\"DIV\");\n    let footer = document.createElement(\"DIV\");\n\n    container.setAttribute(\"id\", \"gridContainer\");\n    header.setAttribute(\"id\", \"header\");\n    sidebar.setAttribute(\"id\", \"sidebar\");\n    subHeader.setAttribute(\"id\", \"subHeader\");\n    content.setAttribute(\"id\", \"content\");\n    footer.setAttribute(\"id\", \"footer\");\n\n    //append children to grid container\n    container.appendChild(header);\n    container.appendChild(sidebar);\n    container.appendChild(subHeader);\n    container.appendChild(content);\n    container.appendChild(footer);\n\n    //define header elements\n    let sidebarButton = document.createElement(\"BUTTON\");\n    let homeButton = document.createElement(\"BUTTON\");\n    let addButton = document.createElement(\"BUTTON\");\n    \n    sidebarButton.setAttribute(\"id\", \"sidebarButton\");\n    sidebarButton.setAttribute(\"type\", \"button\");\n    homeButton.setAttribute(\"id\", \"homeButton\");\n    homeButton.setAttribute(\"type\", \"button\");\n    addButton.setAttribute(\"id\", \"addButton\");\n    addButton.setAttributeq(\"type\", \"button\");\n\n    //append to header\n    header.appendChild(sidebarButton);\n    header.appendChild(homeButton);\n    header.appendChild(addButton);\n\n    //define sidebar elements\n    \n\n\n    return container;\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://todolist/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newItemDOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newItemDOM */ \"./src/newItemDOM.js\");\n\n\nlet newItem = () => {\n    main = document.getElementById(\"main\");\n    main.appendChild((0,_newItemDOM__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}\n\nnewItem();\n\n//# sourceURL=webpack://todolist/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _newItemDOM__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./newItemDOM */ \"./src/newItemDOM.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\nlet loadHome = (() => {\n    main = document.getElementById(\"main\");\n    main.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n})();\n\nlet newItem = () => {\n    main = document.getElementById(\"main\");\n    main.appendChild((0,_newItemDOM__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n}\n\n//# sourceURL=webpack://todolist/./src/index.js?");
 
 /***/ }),
 
