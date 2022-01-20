@@ -11,6 +11,8 @@ let newItemDOM = (title = "", description = "", dueDate = "", priority = "", pro
     let priorityIn = document.createElement("BUTTON");
     let submit = document.createElement("BUTTON");
     let cancel = document.createElement("BUTTON");
+
+    
     //set basic attributes
     titleLabel.setAttribute("for", "title");
     titleIn.setAttribute("type", "text");
@@ -38,6 +40,19 @@ let newItemDOM = (title = "", description = "", dueDate = "", priority = "", pro
     cancel.setAttribute("type", "button");
     cancel.setAttribute("id", "cancel");
     cancel.innerText = "Cancel";
+    //append all sub items to the div and form
+    container.appendChild(textInput);
+    textInput.appendChild(titleLabel);
+    textInput.appendChild(titleIn);
+    textInput.appendChild(descriptionLabel);
+    textInput.appendChild(descriptionIn);
+    textInput.appendChild(dueDateIn);
+    textInput.appendChild(projectIn);
+    textInput.appendChild(priorityIn);
+    textInput.appendChild(submit);
+    textInput.appendChild(cancel);
+
+    return container;
 }
 
 export default newItemDOM;
