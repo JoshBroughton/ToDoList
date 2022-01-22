@@ -28,10 +28,13 @@ let home = () => {
     
     sidebarButton.setAttribute("id", "sidebarButton");
     sidebarButton.setAttribute("type", "button");
+    sidebarButton.innerText = "Sidebar";
     homeButton.setAttribute("id", "homeButton");
     homeButton.setAttribute("type", "button");
+    homeButton.innerText = "Home";
     addButton.setAttribute("id", "addButton");
-    addButton.setAttributeq("type", "button");
+    addButton.setAttribute("type", "button");
+    addButton.innerText = "Add Task";
 
     //append to header
     header.appendChild(sidebarButton);
@@ -39,7 +42,10 @@ let home = () => {
     header.appendChild(addButton);
 
     //define sidebar elements
+    let onDeckButton = document.createElement("BUTTON");
     
+    let projectHeader = document.createElement("H1");
+
 
 
     return container;

@@ -5,8 +5,8 @@
   "main": "webpack.config.js",
   "dependencies": {
     "acorn": "^8.7.0",
-    "ajv": "^6.12.6",
     "acorn-import-assertions": "^1.8.0",
+    "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
     "browserslist": "^4.19.1",
     "buffer-from": "^1.1.2",
@@ -16,7 +16,6 @@
     "colorette": "^2.0.16",
     "commander": "^2.20.3",
     "cross-spawn": "^7.0.3",
-    "css-loader": "^6.5.1",
     "cssesc": "^3.0.0",
     "electron-to-chromium": "^1.4.38",
     "enhanced-resolve": "^5.8.3",
@@ -96,7 +95,6 @@
     "source-map-js": "^1.0.2",
     "source-map-support": "^0.5.21",
     "strip-final-newline": "^2.0.0",
-    "style-loader": "^3.3.1",
     "supports-color": "^8.1.1",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "tapable": "^2.2.1",
@@ -114,7 +112,10 @@
     "wildcard": "^2.0.0",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

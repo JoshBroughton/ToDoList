@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+#gridContainer {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'sidebar subhead subhead subhead subhead subhead'
+        'sidebar main main main main main'
+        'sidebar footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#subHeader {
+    grid-area: subhead;
+}
+
+#content {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
