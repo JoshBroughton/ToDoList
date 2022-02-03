@@ -1,45 +1,29 @@
-import header from './header';
+import header from './headerDOM';
+import sidebar from './sidebarDOM';
 
 let home = () => {
     //define container and grid children
     let container = document.createElement("DIV");
-    let sidebar = document.createElement("DIV");
+    
     let subHeader = document.createElement("DIV");
     let content = document.createElement("DIV");
     let footer = document.createElement("DIV");
 
     container.setAttribute("id", "gridContainer");
-    sidebar.setAttribute("id", "sidebar");
+    
     subHeader.setAttribute("id", "subHeader");
     content.setAttribute("id", "content");
     footer.setAttribute("id", "footer");
 
     //append children to grid container
     container.appendChild(header());
-    container.appendChild(sidebar);
+    container.appendChild(sidebar());
     container.appendChild(subHeader);
     container.appendChild(content);
     container.appendChild(footer);
 
 
-    //define sidebar elements
-    let onDeckButton = document.createElement("BUTTON");
-    let stagingButton = document.createElement("BUTTON");
-    let projectHeader = document.createElement("H1");
-    //projects will need to be dynamically appended the the header
-    onDeckButton.setAttribute("id", "onDeckButton");
-    onDeckButton.setAttribute("type", "button");
-    onDeckButton.innerText = "On Deck";
-    stagingButton.setAttribute("id", "stagingButton");
-    stagingButton.setAttribute("type", "button");
-    stagingButton.innerText = "Staging";
-    projectHeader.setAttribute("id", "projectHeader");
-    projectHeader.innerText = "Projects"
-
-    //append to sidebar
-    sidebar.appendChild(onDeckButton);
-    sidebar.appendChild(stagingButton);
-    sidebar.appendChild(projectHeader);
+    
 
     //temporary elements to get css roughed in before working on dynamic project adding
     let tempSubHead = document.createElement("H1");
