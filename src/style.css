@@ -7,33 +7,43 @@
 
 #gridContainer {
     display: grid;
-    grid-template-areas:
-        'header header header header header header'
-        'sidebar subhead subhead subhead subhead subhead'
-        'sidebar main main main main main'
-        'sidebar footer footer footer footer footer';
-    grid-gap: 10px;
-    padding: 10px;
+    grid-template-columns: 240px auto;
+    grid-template-rows: 65px 65px auto 65px;
+    grid-template-areas: 
+        'header header'
+        'sidebar subhead'
+        'sidebar main'
+        'sidebar footer';
+
     width: 100vw;
     height: 100vh;
 }
 
 #header {
     grid-area: header;
+    background-color: #001D3D;
 }
 
 #sidebar {
     grid-area: sidebar;
+    color: whitesmoke;
+    background-color: #000814;
 }
 
 #subHeader {
     grid-area: subhead;
+    color: whitesmoke;
+    background-color: #003566;
 }
 
 #content {
     grid-area: main;
+    color: whitesmoke;
+    background-color: #003566;
 }
 
 #footer {
     grid-area: footer;
+    color: whitesmoke;
+    background-color: #000814;
 }
