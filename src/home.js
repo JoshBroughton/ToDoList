@@ -1,26 +1,27 @@
 import header from './headerDOM';
 import sidebar from './sidebarDOM';
 import subHeader from './subHeadDOM';
+import content from './contentDOM';
 
 let home = () => {
     //define container and grid children
     let container = document.createElement("DIV");
     
     
-    let content = document.createElement("DIV");
+    
     let footer = document.createElement("DIV");
 
     container.setAttribute("id", "gridContainer");
     
     
-    content.setAttribute("id", "content");
+    
     footer.setAttribute("id", "footer");
 
     //append children to grid container
     container.appendChild(header());
     container.appendChild(sidebar());
     container.appendChild(subHeader());
-    container.appendChild(content);
+    container.appendChild(content());
     container.appendChild(footer);
 
 
@@ -28,10 +29,9 @@ let home = () => {
 
     //temporary elements to get css roughed in before working on dynamic project adding
     
-    let tempContent = document.createElement("P");
+    
 
     
-    tempContent.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
 
     //rough in footer elements
     let footerStatement = document.createElement("H1");
@@ -44,7 +44,7 @@ let home = () => {
     footerButton.innerText = "Github";
 
     
-    content.appendChild(tempContent);
+    
     footer.appendChild(footerStatement);
     footer.appendChild(footerButton);
 
