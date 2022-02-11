@@ -14,7 +14,7 @@ let sidebar = () => {
     stagingButton.setAttribute("type", "button");
     stagingButton.innerText = "Staging";
     projectHeader.setAttribute("id", "projectHeader");
-    projectHeader.innerText = "Projects"
+    projectHeader.innerText = "Projects";
 
     //append to sidebar
     sidebar.appendChild(onDeckButton);

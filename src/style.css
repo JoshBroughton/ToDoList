@@ -21,25 +21,106 @@
 
 #header {
     grid-area: header;
-    background-color: #001D3D;
+    background-color: #003566;
+    display: grid;
+    grid-template-columns: 20px 50px 20px 50px 20px 50px auto;
+
 }
+
+#homeButton {
+    grid-column-start: 2;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('./house.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px;
+}
+
+#sidebarButton {
+    grid-column-start: 4;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('./square.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px;
+}
+
+#addButton {
+    grid-column-start: 6;
+    background-color: transparent;
+    border: transparent;
+    background-image: url('./plus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+}
+
+#homeButton:hover {
+    transform: scale(1.1);
+}
+
+#sidebarButton:hover {
+    transform: scale(1.1);
+}
+
+#addButton:hover {
+    transform: scale(1.1);
+}
+
+
 
 #sidebar {
     grid-area: sidebar;
     color: whitesmoke;
     background-color: #000814;
+    display: grid;
+    grid-template-rows: 75px 75px 75px auto;
+}
+
+#onDeckButton {
+    background-color: transparent;
+    border: transparent;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#stagingButton {
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 36px;
+}
+
+#projectHeader {
+    align-self: center;
+    justify-self: center;
+    font-size: 36px;
+}
+
+#onDeckButton:hover {
+    transform: scale(1.1);
+}
+
+#stagingButton:hover {
+    transform: scale(1.1);
 }
 
 #subHeader {
     grid-area: subhead;
     color: whitesmoke;
-    background-color: #003566;
+    /* background-color: #003566; */
+    background-color: #001D3D;
 }
 
 #content {
     grid-area: main;
     color: whitesmoke;
-    background-color: #003566;
+    /* background-color: #003566; */
+    background-color: #001D3D;
 }
 
 #footer {

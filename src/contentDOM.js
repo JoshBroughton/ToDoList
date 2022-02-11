@@ -1,4 +1,5 @@
 let content = () => {
+    //defines the HTML elements that make up the content section of the main page
     let content = document.createElement("DIV");
     content.setAttribute("id", "content");
 

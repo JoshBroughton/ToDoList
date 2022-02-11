@@ -1,4 +1,5 @@
 let footer = () => {
+    //defines the HTML elements that make up the footer of the home page
     let footer = document.createElement("DIV");
     footer.setAttribute("id", "footer");
 
