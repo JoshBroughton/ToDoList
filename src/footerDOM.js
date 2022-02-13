@@ -5,13 +5,12 @@ let footer = () => {
 
     //rough in footer elements
     let footerStatement = document.createElement("H1");
-    let footerButton = document.createElement("BUTTON");
+    let footerButton = document.createElement("a");
 
     footerStatement.setAttribute("id", "footerStatement");
-    footerStatement.innerText = "Josh Broughton";
+    footerStatement.innerText = "Made By Josh Broughton";
     footerButton.setAttribute("id", "footerButton");
-    footerButton.setAttribute("type", "button");
-    footerButton.innerText = "Github";
+    footerButton.setAttribute("href", "https://github.com/JoshBroughton");
 
     footer.appendChild(footerStatement);
     footer.appendChild(footerButton);

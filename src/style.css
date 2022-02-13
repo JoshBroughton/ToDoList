@@ -7,7 +7,7 @@
 
 #gridContainer {
     display: grid;
-    grid-template-columns: 240px auto;
+    grid-template-columns: 400px auto;
     grid-template-rows: 65px 65px auto 65px;
     grid-template-areas: 
         'header header'
@@ -23,7 +23,7 @@
     grid-area: header;
     background-color: #003566;
     display: grid;
-    grid-template-columns: 20px 50px 20px 50px 20px 50px auto;
+    grid-template-columns: 100px 50px 40px 50px 40px 50px auto;
 
 }
 
@@ -112,19 +112,38 @@
 #subHeader {
     grid-area: subhead;
     color: whitesmoke;
-    /* background-color: #003566; */
     background-color: #001D3D;
+    padding-left: 50px;
+    padding-top: 25px;
 }
 
 #content {
     grid-area: main;
     color: whitesmoke;
-    /* background-color: #003566; */
     background-color: #001D3D;
+    padding-left: 50px;
+    padding-top: 25px;
 }
 
 #footer {
     grid-area: footer;
     color: whitesmoke;
     background-color: #000814;
+    display: grid;
+    grid-template-columns: 28vw 275px 50px auto;
+}
+
+#footerStatement {
+    grid-column-start: 2;
+    font-size: 18px;
+    align-self: center;
+}
+
+#footerButton {
+    background-image: url('./GitHub-Mark-Light-64px.png');
+    background-color: transparent;
+    border: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px;
 }
