@@ -13,7 +13,7 @@
         'header header'
         'sidebar subhead'
         'sidebar main'
-        'sidebar footer';
+        'footer footer';
 
     width: 100vw;
     height: 100vh;
@@ -68,8 +68,6 @@
 #addButton:hover {
     transform: scale(1.1);
 }
-
-
 
 #sidebar {
     grid-area: sidebar;
@@ -130,7 +128,7 @@
     color: whitesmoke;
     background-color: #000814;
     display: grid;
-    grid-template-columns: 28vw 275px 50px auto;
+    grid-template-columns: 43.5vw 275px 50px auto;
 }
 
 #footerStatement {
@@ -147,3 +145,4 @@
     background-position: center;
     background-size: 45px;
 }
+

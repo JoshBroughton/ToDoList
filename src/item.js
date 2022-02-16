@@ -12,6 +12,6 @@ let itemFactory = (title, description, dueDate, priority, project = "none") => {
     let setProject = (newProject) => project = newProject;
 
     return { title, description, dueDate, priority, project, 
-        setTitle, setDescription, setDueDate, setPriority, setPriority}
+        setTitle, setDescription, setDueDate, setPriority, setPriority, setProject}
 }
 export default itemFactory;

@@ -8,7 +8,22 @@ let loadHome = (() => {
     main.appendChild(home());
 })();
 
+let clearContent = () => {
+    let parent = document.getElementById("content");
+    while (parent.firstChild) {
+        parent.firstChild.remove();
+    }
+}
 let newItem = () => {
-    main = document.getElementById("main");
+    clearContent();
+    main = document.getElementById("content");
     main.appendChild(newItemDOM());
 }
+addButton = document.getElementById("addButton");
+addButton.addEventListener('click', newItem);
+
+//One object/collection should contain the list of projects
+//the project that a todo item belongs to should be keyed to the item
+//if a project is deleted, the user decides if the subtasks become associated
+//with default proejct (staging) or are deleted as well
+//a separate collection holds all tasks
