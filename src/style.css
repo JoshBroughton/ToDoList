@@ -109,18 +109,22 @@
 
 #subHeader {
     grid-area: subhead;
+    display: grid;
     color: whitesmoke;
     background-color: #001D3D;
     padding-left: 50px;
     padding-top: 25px;
+    justify-content: center;
 }
 
 #content {
     grid-area: main;
+    display: grid;
     color: whitesmoke;
     background-color: #001D3D;
     padding-left: 50px;
     padding-top: 25px;
+    justify-content: center;
 }
 
 #footer {
@@ -146,3 +150,18 @@
     background-size: 45px;
 }
 
+#form {
+    width: 850px;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-areas: 'title'; */
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: solid black;
+}
+
+#descriptionIn {
+    resize: none;
+}
