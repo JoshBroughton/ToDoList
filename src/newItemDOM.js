@@ -1,4 +1,4 @@
-let newItemDOM = (title = "", description = "", dueDate = "", priority = "", project = "none") => {
+let newItemDOM = () => {
     //create all the elements for inputting the fields to create a new item object
     let textInput = document.createElement("FORM");
     let titleIn = document.createElement("INPUT");
