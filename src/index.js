@@ -1,6 +1,5 @@
 import newItemDOM from './newItemDOM';
 import home from './home';
-
 import './style.css';
 
 let loadHome = (() => {
@@ -17,10 +16,13 @@ let clearContent = () => {
 let newItem = () => {
     clearContent();
     main = document.getElementById("content");
-    main.appendChild(newItemDOM());
+    main.appendChild(newItemDOM(projects));
 }
 addButton = document.getElementById("addButton");
 addButton.addEventListener('click', newItem);
+
+//list to contain the projects
+const projects = ["Default", "Exercise", "Code"];
 
 //One object/collection should contain the list of projects
 //the project that a todo item belongs to should be keyed to the item
