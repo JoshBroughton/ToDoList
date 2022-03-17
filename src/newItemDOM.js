@@ -1,11 +1,11 @@
-let newItemDOM = (projects) => {
+let newItemDOM = (projects, priorities) => {
     //create all the elements for inputting the fields to create a new item object
     let textInput = document.createElement("FORM");
     let titleIn = document.createElement("INPUT");
     let descriptionIn = document.createElement("TEXTAREA");
-    let dueDateIn = document.createElement("BUTTON");
+    let dueDateIn = document.createElement("INPUT");
     let projectIn = document.createElement("SELECT");
-    let priorityIn = document.createElement("BUTTON");
+    let priorityIn = document.createElement("SELECT");
     let submit = document.createElement("BUTTON");
     let cancel = document.createElement("BUTTON");
 
@@ -22,7 +22,7 @@ let newItemDOM = (projects) => {
     descriptionIn.setAttribute("name", "descriptionIn");
     descriptionIn.setAttribute('placeholder', 'Description');
 
-    dueDateIn.setAttribute("type", "button");
+    dueDateIn.setAttribute("type", "Date");
     dueDateIn.setAttribute("id", "dueDateIn")
     dueDateIn.innerText = "Due Date";
     projectIn.setAttribute("type", "button");
@@ -54,6 +54,15 @@ let newItemDOM = (projects) => {
         option.innerText = project;
         projectIn.appendChild(option);
     }
+
+    for (const priority of priorities) {
+        let option = document.createElement("OPTION");
+        option.value = priority;
+        option.innerText = priority;
+        priorityIn.appendChild(option);
+    }
+
+
 
     return textInput;
 }

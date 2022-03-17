@@ -1,9 +1,9 @@
-let itemFactory = (title, description, dueDate, priority, project = "none") => {
-    let title = title;
-    let description = description;
-    let dueDate = dueDate;
-    let priority = priority;
-    let project = project;
+let itemFactory = (itemTitle, itemDescription, itemDueDate, itemPriority, itemProject = "Default") => {
+    let title = itemTitle;
+    let description = itemDescription;
+    let dueDate = itemDueDate;
+    let priority = itemPriority;
+    let project = itemProject;
     //setters for editing tasks
     let setTitle = (newTitle) => title = newTitle;
     let setDescription = (newDescription) => description = newDescription;
