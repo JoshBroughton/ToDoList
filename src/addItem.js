@@ -7,9 +7,8 @@ let addItem = () => {
     let projectIn = document.getElementById("projectIn");
     let priorityIn = document.getElementById("priorityIn");
 
-    let title = titleIn.innerText;
-    let description = descriptionIn.innerText;
-    //how are these values saved? depends how the drop down stores them
+    let title = titleIn.value;
+    let description = descriptionIn.value;
     let dueDate = dueDateIn.value;
     let project = projectIn.value;
     let priority = priorityIn.value;

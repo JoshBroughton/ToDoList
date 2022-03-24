@@ -4,12 +4,15 @@ import addItem from './addItem';
 import clearInput from './clearInput';
 import itemFactory from './item'; 
 import './style.css';
+import content from './contentDOM';
+import sidebarToggle from './sidebarToggle';
 
-let loadHome = (() => {
+let loadHome = () => {
     main = document.getElementById("main");
+    content();
     main.appendChild(home());
-})();
-
+};
+loadHome();
 let clearContent = () => {
     let parent = document.getElementById("content");
     while (parent.firstChild) {
@@ -26,12 +29,12 @@ let newItemButtonClick = () => {
 //not done
 let homeButtonClick = () => {
     clearContent();
-    home();
+    loadHome();
 }
 let addNewItem = () => {
     items.push(addItem());
     clearInput();
-    console.log(items[0].dueDate);
+    console.log(items[0].title);
 }
 
 let addButton = document.getElementById("addButton");
@@ -39,6 +42,9 @@ addButton.addEventListener('click', newItemButtonClick);
 
 let homeButton = document.getElementById("homeButton");
 homeButton.addEventListener('click', homeButtonClick);
+
+let sidebarButton = document.getElementById('sidebarButton');
+sidebarButton.addEventListener('click', sidebarToggle);
 
 
 

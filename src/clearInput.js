@@ -5,8 +5,8 @@ let clearInput = () => {
     let projectIn = document.getElementById("projectIn");
     let priorityIn = document.getElementById("priorityIn");
 
-    titleIn.innerText = "Task Title";
-    descriptionIn.innerText = "Description";
+    titleIn.value = '';
+    descriptionIn.value = '';
     dueDateIn.value = '';
     projectIn.value = '';
     priorityIn.value = '';
