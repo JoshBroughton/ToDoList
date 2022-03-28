@@ -30,7 +30,7 @@ let newItemButtonClick = () => {
 //not done
 let homeButtonClick = () => {
     clearContent();
-    loadHome();
+    content();
 }
 let addNewItem = () => {
     items.push(addItem());
