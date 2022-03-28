@@ -19,6 +19,7 @@ let clearContent = () => {
         parent.firstChild.remove();
     }
 }
+clearContent();
 let newItemButtonClick = () => {
     clearContent();
     main = document.getElementById("content");
@@ -45,8 +46,6 @@ homeButton.addEventListener('click', homeButtonClick);
 
 let sidebarButton = document.getElementById('sidebarButton');
 sidebarButton.addEventListener('click', sidebarToggle);
-
-
 
 //list to contain the projects
 const projects = ["Default", "Exercise", "Code"];
