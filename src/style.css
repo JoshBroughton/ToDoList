@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -113,10 +114,10 @@
     display: grid;
     color: whitesmoke;
     background-color: #001D3D;
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 25px;
     justify-self: stretch;
-    justify-content: center;
+    justify-content: left;
 }
 
 #content {
@@ -124,9 +125,9 @@
     display: grid;
     color: whitesmoke;
     background-color: #001D3D;
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 25px;
-    justify-content: center;
+    justify-content: left;
     column-width: 100vw;
 }
 
@@ -154,17 +155,61 @@
 }
 
 #form {
-    width: 850px;
-    height: 250px;
+    width: 860px;
+    height: 383px;
     display: grid;
-    grid-template-rows: 50px 150px 50px;
+    grid-template-rows: 75px 250px 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-areas: 'title'; */
+    grid-template-areas: 
+        'titleIn titleIn titleIn titleIn titleIn'
+        'descriptionIn descriptionIn descriptionIn descriptionIn descriptionIn'
+        'dueDateIn projectIn priorityIn submit cancel';
     margin: 0 auto;
     box-sizing: border-box;
     border: solid black;
+    border-radius: 7px;
+    background-color:#000814;
+}
+
+.formInput {
+    background-color: #000814;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border: whitesmoke;
+    border-width: 2px;
+    border-radius: 7px;
+    border-style: solid;
+}
+#titleIn {
+    grid-area: titleIn;
+    font-size: 48px;
+    border: none;
 }
 
 #descriptionIn {
+    grid-area: descriptionIn;
     resize: none;
+    border: none;
+}
+
+#dueDateIn {
+    grid-area: dueDateIn;
+}
+
+#projectIn {
+    grid-area: projectIn;
+}
+
+#priorityIn {
+    grid-area: priorityIn;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+#cancel {
+    grid-area: cancel;
 }

@@ -8,8 +8,8 @@ let clearInput = () => {
     titleIn.value = '';
     descriptionIn.value = '';
     dueDateIn.value = '';
-    projectIn.value = '';
-    priorityIn.value = '';
+    projectIn.value = 'Default';
+    priorityIn.value = 'Priority 1';
 }
 
 export default clearInput;

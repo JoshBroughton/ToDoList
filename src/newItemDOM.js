@@ -16,27 +16,34 @@ let newItemDOM = (projects, priorities) => {
     titleIn.setAttribute("id", "titleIn");
     titleIn.setAttribute("name", "titleIn");
     titleIn.setAttribute("placeholder", 'Task Title');
+    titleIn.setAttribute('class', 'formInput');
 
     descriptionIn.setAttribute("type", "text");
     descriptionIn.setAttribute("id", "descriptionIn");
     descriptionIn.setAttribute("name", "descriptionIn");
     descriptionIn.setAttribute('placeholder', 'Description');
+    descriptionIn.setAttribute('class', 'formInput');
 
     dueDateIn.setAttribute("type", "Date");
     dueDateIn.setAttribute("id", "dueDateIn")
+    dueDateIn.setAttribute('class', 'formInput');
     dueDateIn.innerText = "Due Date";
     projectIn.setAttribute("type", "button");
     projectIn.setAttribute("id", "projectIn");
+    projectIn.setAttribute('class', 'formInput');
     projectIn.innerText = "Project";
     priorityIn.setAttribute("type", "button");
     priorityIn.setAttribute("id", "priorityIn");
+    priorityIn.setAttribute('class', 'formInput');
     priorityIn.innerText = "Priority";
 
     submit.setAttribute("type", "button");
     submit.setAttribute("id", "submit");
+    submit.setAttribute('class', 'formInput');
     submit.innerText = "Submit";
     cancel.setAttribute("type", "button");
     cancel.setAttribute("id", "cancel");
+    cancel.setAttribute('class', 'formInput');
     cancel.innerText = "Cancel";
     //append all sub items to the div and form
     textInput.appendChild(titleIn);

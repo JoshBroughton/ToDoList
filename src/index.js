@@ -9,7 +9,7 @@ import sidebarToggle from './sidebarToggle';
 
 let loadHome = () => {
     main = document.getElementById("main");
-    content();
+    //content();
     main.appendChild(home());
 };
 loadHome();
@@ -35,7 +35,7 @@ let homeButtonClick = () => {
 let addNewItem = () => {
     items.push(addItem());
     clearInput();
-    console.log(items[0].title);
+    console.log(items);
 }
 
 let addButton = document.getElementById("addButton");
