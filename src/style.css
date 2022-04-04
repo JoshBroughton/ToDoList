@@ -117,7 +117,7 @@
     padding-left: 100px;
     padding-top: 25px;
     justify-self: stretch;
-    justify-content: left;
+    justify-content: center;
 }
 
 #content {
@@ -127,7 +127,7 @@
     background-color: #001D3D;
     padding-left: 100px;
     padding-top: 25px;
-    justify-content: left;
+    justify-content: center;
     column-width: 100vw;
 }
 
