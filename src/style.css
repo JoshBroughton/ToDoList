@@ -8,13 +8,13 @@
 
 #gridContainer {
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 100vw;
     grid-template-rows: 65px 65px auto 65px;
     grid-template-areas: 
-        'header header'
-        'sidebar subhead'
-        'sidebar main'
-        'footer footer';
+        'header'
+        'subhead'
+        'main'
+        'footer';
     width: 100vw;
     height: 100vh;
 }
@@ -70,7 +70,11 @@
 }
 
 #sidebar {
-    grid-area: sidebar;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     color: whitesmoke;
     background-color: #000814;
     display: grid;
@@ -78,6 +82,7 @@
     z-index: 1;
     overflow-x: hidden;
 }
+ 
 
 #onDeckButton {
     background-color: transparent;
@@ -114,10 +119,10 @@
     display: grid;
     color: whitesmoke;
     background-color: #001D3D;
-    padding-left: 100px;
     padding-top: 25px;
-    justify-self: stretch;
-    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    column-width: 100vw;
 }
 
 #content {
@@ -136,17 +141,23 @@
     color: whitesmoke;
     background-color: #000814;
     display: grid;
-    grid-template-columns: 43.5vw 275px 50px auto;
+    justify-self: center;
+    grid-template-columns: 1fr;
 }
-
+#footDiv {
+    column-width: 100vw;
+    display: grid;
+    grid-template-columns: ;
+}
 #footerStatement {
-    grid-column-start: 2;
     font-size: 18px;
+    justify-self: right;
     align-self: center;
 }
 
 #footerButton {
     background-image: url('./GitHub-Mark-Light-64px.png');
+    grid-column-start: 3;
     background-color: transparent;
     border: transparent;
     background-repeat: no-repeat;

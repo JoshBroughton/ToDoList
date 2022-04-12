@@ -2,15 +2,15 @@ let sidebarToggle = () => {
     let sidebar = document.getElementById("sidebar");
     let style = window.getComputedStyle(sidebar);
     let width = style.getPropertyValue('width');
-    let container = document.getElementById('gridContainer');
+    let main = document.getElementById('main');
     
     if (width == '400px') {
         sidebar.style.width = '0px';
-        container.style.gridTemplateColumns = '0px auto';
+        main.style.marginLeft = '0px';
 
     } else {
         sidebar.style.width = '400px';
-        container.style.gridTemplateColumns = '400px auto';
+        main.style.marginLeft = '400px';
     }
 }
 export default sidebarToggle;
