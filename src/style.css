@@ -119,10 +119,10 @@
     display: grid;
     color: whitesmoke;
     background-color: #001D3D;
-    padding-top: 25px;
-    justify-self: center;
-    justify-items: center;
-    column-width: 100vw;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #content {
@@ -141,8 +141,10 @@
     color: whitesmoke;
     background-color: #000814;
     display: grid;
-    justify-self: center;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
 }
 #footDiv {
     column-width: 100vw;
@@ -163,6 +165,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 45px;
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
 }
 
 #form {

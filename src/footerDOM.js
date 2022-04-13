@@ -4,7 +4,7 @@ let footer = () => {
     footer.setAttribute("id", "footer");
 
     //rough in footer elements
-    let footDiv = document.createElement('div');
+    
     let footerStatement = document.createElement("H1");
     let footerButton = document.createElement("a");
 
@@ -13,9 +13,9 @@ let footer = () => {
     footerButton.setAttribute("id", "footerButton");
     footerButton.setAttribute("href", "https://github.com/JoshBroughton");
 
-    footDiv.appendChild(footerStatement);
-    footDiv.appendChild(footerButton);
-    footer.appendChild(footDiv);
+    footer.appendChild(footerStatement);
+    footer.appendChild(footerButton);
+    
 
     return footer;
 }
