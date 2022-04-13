@@ -1,16 +1,15 @@
 let sidebarToggle = () => {
     let sidebar = document.getElementById("sidebar");
     let style = window.getComputedStyle(sidebar);
-    let width = style.getPropertyValue('width');
-    let main = document.getElementById('main');
+    let vis = style.getPropertyValue('visibility');
+    console.log(vis);
     
-    if (width == '400px') {
-        sidebar.style.width = '0px';
-        main.style.marginLeft = '0px';
+    if (vis == 'hidden') {
+        sidebar.style.visibility = 'visible';
 
     } else {
-        sidebar.style.width = '400px';
-        main.style.marginLeft = '400px';
+        sidebar.style.visibility = 'hidden';
     }
+
 }
 export default sidebarToggle;

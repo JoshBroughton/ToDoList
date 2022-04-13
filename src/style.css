@@ -23,8 +23,7 @@
     grid-area: header;
     background-color: #003566;
     display: grid;
-    grid-template-columns: 100px 50px 40px 50px 40px 50px auto;
-
+    grid-template-columns: 410px 50px 40px 50px 40px 50px auto;
 }
 
 #homeButton {
@@ -71,16 +70,14 @@
 
 #sidebar {
     height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 250px;
+    display: grid;
+    visibility: hidden;
     color: whitesmoke;
     background-color: #000814;
-    display: grid;
     grid-template-rows: 75px 75px 75px auto;
     z-index: 1;
-    overflow-x: hidden;
+    position: fixed;
 }
  
 
