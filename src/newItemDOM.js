@@ -15,7 +15,7 @@ let newItemDOM = (projects, priorities) => {
     titleIn.setAttribute("type", "text");
     titleIn.setAttribute("id", "titleIn");
     titleIn.setAttribute("name", "titleIn");
-    titleIn.setAttribute("placeholder", 'Task Title');
+    titleIn.setAttribute('placeholder', 'Task Title');
     titleIn.setAttribute('class', 'formInput');
 
     descriptionIn.setAttribute("type", "text");

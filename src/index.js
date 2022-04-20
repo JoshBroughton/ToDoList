@@ -6,11 +6,15 @@ import itemFactory from './item';
 import './style.css';
 import content from './contentDOM';
 import sidebarToggle from './sidebarToggle';
+import projectListDom from './projectListDom';
+
+const projects = ["Default", "Exercise", "Code"];
 
 let loadHome = () => {
     main = document.getElementById("main");
     //content();
     main.appendChild(home());
+    projectListDom(projects);
 };
 loadHome();
 let clearContent = () => {
@@ -33,9 +37,13 @@ let homeButtonClick = () => {
     content();
 }
 let addNewItem = () => {
-    items.push(addItem());
-    clearInput();
-    console.log(items);
+    let titleIn = document.getElementById('titleIn');
+    if (titleIn.value == '') {
+        alert('Please enter a title for the task.')
+    } else {
+        items.push(addItem());
+        clearInput();
+    }
 }
 
 let addButton = document.getElementById("addButton");
@@ -48,7 +56,7 @@ let sidebarButton = document.getElementById('sidebarButton');
 sidebarButton.addEventListener('click', sidebarToggle);
 
 //list to contain the projects
-const projects = ["Default", "Exercise", "Code"];
+
 const priorities = ["Priority 1", "Priority 2", "Priority 3", "Priority 4", "Priority 5"];
 const items = [];
 //One object/collection should contain the list of projects

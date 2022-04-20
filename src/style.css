@@ -116,7 +116,7 @@
     display: grid;
     color: whitesmoke;
     background-color: #001D3D;
-    align-content: center;
+    align-content: end;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -146,7 +146,6 @@
 #footDiv {
     column-width: 100vw;
     display: grid;
-    grid-template-columns: ;
 }
 #footerStatement {
     font-size: 18px;
